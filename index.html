@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap 4-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="CSS/resinCalculator.css">
+  <link rel="shortcut icon" href="images/favicon/resin.png" type="image/x-icon">
+  <title>Resin Calculator</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-custom navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="https://github.com/Gremlin-Gremlin">Gremlin</a>
+  </nav>
+  <div class="title col-sm">
+    <h1>Genshin Impact</h1>
+    <h2>Resin Calculator</h2>
+    <h3>V. 1.0.0</h3>
+  </div>
+  <div>
+    <img class="resin-image" src="images/favicon/original-resin.png" alt="Original Resin Image">
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="how-to-use col-lg col-md col-sm">
+        <h2 class="h2-how-to-use">HOW TO USE:</h2>
+        <div class="collapse" id="collapsebtn">
+          <p><strong>1st: </strong>Input your resin quantity inside the input box below.</p>
+          <p><strong>2nd: </strong>Press the button "Calculate" to start the countdown.
+            The countdown will stop when it reaches 00:00:00, notifying you!</p>
+          <p><strong>Important: </strong>If you want to get the timer of another
+            resin value, make sure to stop the ongoing countdown first and then press to
+            calculate again.</p>
+        </div>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapsebtn"
+          aria-expanded="false" aria-controls="collapsebtn">Show/Hide</button>
+      </div>
+      <div class="calculator col-lg col-md col-sm">
+        <h2 class="h2-how-to-use">INPUT YOUR RESIN:</h2>
+        <div class="input">
+          <input class="input-group mb-3" id="resinvalue" type="number" min="0" max="160" placeholder="0-160">
+        </div>
+        <button class="btn btn-primary" id="calculate">Calculate</button>
+        <button class="btn btn-primary" id="stop">Stop</button>
+        <div class="print-calculator">
+          <p id="show-your-resin-quantity"></p>
+          <p id="alert-countdown"></p>
+          <p id="print-countdown"></p>
+          <p id="resin-restored"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="JS/resinCalculator.js"></script>
+</body>
+
+</html>

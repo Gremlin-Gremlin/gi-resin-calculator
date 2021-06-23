@@ -1,0 +1,78 @@
+body {
+    background-color: rgba(21, 24, 24);
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+/* Images */
+.resin-image{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+}
+
+/* Navbar */
+.navbar-custom {
+    background-color: rgba(0, 0, 0, 0.144);
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    text-align: left;
+    color: rgb(194, 187, 141);
+}
+
+/* Heading Styles */
+.title {
+    color: rgb(194, 187, 141);
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Explanation Style */
+.how-to-use {
+    padding: 2rem;
+    text-align: left;
+}
+
+.h2-how-to-use {
+    color: rgb(194, 187, 141);
+    padding: 0;
+    padding-bottom: 1rem;
+    text-align: left;
+}
+
+/* Calculator Style*/
+.calculator {
+    padding: 2rem;
+    margin-top: 0;
+}
+
+/* Input */
+#resinvalue {
+    border-radius: 5x;
+    max-width: 100px;
+}
+
+.print-calculator {
+    margin-top: 2rem;
+}
+
+/* Footer */
+.footer {
+    background-color: black;
+    text-align: center;
+}
+
+/* Media  */
+@media only screen and (max-width: 768px) {
+
+    .how-to-use,
+    .h2-how-to-use,
+    .calculator {
+        text-align: center;
+    }
+
+    #resinvalue {
+        margin: auto;
+    }
+}
